@@ -3,13 +3,11 @@
   margin: 0;
   padding: 0;
 }
-
 h1 {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 15px;
 }
-
 table {
   font-size: 25px;
   position: absolute;
@@ -20,21 +18,20 @@ table {
   text-align: center;
   border-spacing: 10px;
 }
-
 tr {
   border: 1px gray solid;
 }
 td {
+  border-radius: 5%;
+  transition: all 0.2s;
   border: 1px gray solid;
 }
-
 table.fixed {
   table-layout: fixed;
 }
 table.fixed td {
   overflow: hidden;
 }
-
 tr:nth-child(1) :nth-child(n + 2):nth-child(-n + 17) {
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 255, 255);
@@ -47,7 +44,6 @@ tr:nth-child(3) :nth-child(n + 3):nth-child(-n + 12) {
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 255, 255);
 }
-
 tr:nth-child(8) :nth-child(n + 1):nth-child(-n + 2) {
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 255, 255);
@@ -64,7 +60,6 @@ tr:nth-child(9) :nth-child(n + 17):nth-child(-n + 18) {
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(255, 255, 255);
 }
-
 td:nth-child(1) {
   background-color: rgb(255, 0, 0);
   border: 1px solid rgb(110, 110, 110);
@@ -73,12 +68,10 @@ td:nth-child(2) {
   background-color: rgb(255, 0, 0);
   border: 1px solid rgb(110, 110, 110);
 }
-
 #lastCell {
   background-color: rgb(255, 0, 0);
   border: 1px solid rgb(110, 110, 110);
 }
-
 tr:nth-child(4) :nth-child(n + 3):nth-child(-n + 12) {
   background-color: rgb(67, 154, 236);
   border: 1px solid rgb(110, 110, 110);
@@ -95,40 +88,33 @@ tr:nth-child(7) :nth-child(n + 3):nth-child(-n + 12) {
   background-color: rgb(67, 154, 236);
   border: 1px solid rgb(110, 110, 110);
 }
-
-/* td:nth-child(3) :nth-child(n + 2) :nth-child(-n + 7) {
-  background-color: rgb(236, 219, 67);
-  border: 1px solid rgb(110, 110, 110);
-} */
-
-td:nth-child(13)/* :nth-child(n + 3):nth-child(-n + 6) */ {
+td:nth-child(13) {
   background-color: rgb(255, 238, 0);
   border: 1px solid rgb(110, 110, 110);
 }
 
-td:nth-child(14)/* :nth-child(n + 3):nth-child(-n + 6) */ {
+td:nth-child(14) {
   background-color: rgb(255, 238, 0);
   border: 1px solid rgb(110, 110, 110);
 }
 
-td:nth-child(15)/* :nth-child(n + 3):nth-child(-n + 6) */ {
+td:nth-child(15) {
   background-color: rgb(255, 238, 0);
   border: 1px solid rgb(110, 110, 110);
 }
 
-td:nth-child(16)/* :nth-child(n + 3):nth-child(-n + 6) */ {
+td:nth-child(16) {
   background-color: rgb(255, 238, 0);
   border: 1px solid rgb(110, 110, 110);
 }
-td:nth-child(17)/* :nth-child(n + 3):nth-child(-n + 6) */ {
+td:nth-child(17) {
   background-color: rgb(255, 238, 0);
   border: 1px solid rgb(110, 110, 110);
 }
-td:nth-child(18)/* :nth-child(n + 3):nth-child(-n + 6) */ {
+td:nth-child(18) {
   background-color: rgb(255, 238, 0);
   border: 1px solid rgb(110, 110, 110);
 }
-
 tr:nth-child(8) :nth-child(n + 3):nth-child(-n + 16) {
   background-color: rgb(81, 236, 67);
   border: 1px solid rgb(110, 110, 110);
@@ -137,21 +123,14 @@ tr:nth-child(9) :nth-child(n + 3):nth-child(-n + 16) {
   background-color: rgb(81, 236, 67);
   border: 1px solid rgb(110, 110, 110);
 }
-
 /* pseudo */
-
 td:hover {
-  transform: scale(1.3);
+  transform: scale(1.2);
   border-radius: 20%;
-  border-color: red;
-  font-size: 30px;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   cursor: zoom-in;
-  opacity: 70%;
+  opacity: 80%;
 }
-
-/* tr:hover {
-  border-radius: 20%;
-  border-color: red;
+td:empty {
+  cursor: grab;
 }
- */
