@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+table {
+  position: absolute;
+  margin-left: 100px;
+  height: 90%;
+  width: 90%;
+  border: 1px solid black;
+  text-align: center;
+}
+
+tr {
+  border: 1px gray solid;
+}
+td {
+  border: 1px gray solid;
+}
+
+table.fixed {
+  table-layout: fixed;
+}
+table.fixed td {
+  overflow: hidden;
+}
